@@ -2,6 +2,70 @@ body{
     background-color: #fffbf7;
     align-items: center;
 }
+.header{
+    margin:40px 20px 0;
+    font-size:0 ;
+    font-family: sans-serif;
+    height: 45px;
+}
+.logo{
+    width: 15%;
+}
+.logo>img{
+    width: 20%;
+}
+.main{
+    margin-top: 140px;
+    text-align: center;
+}
+.navBar{
+    width: 70%;
+    text-align: left;
+    color: #025157;
+    font-weight: 500;
+    color:sans-serif;
+    
+}
+.itemsMenu>*{
+    display: inline;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+.actions{
+    width: 15%;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 600;
+}
+.actions>*{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.actions>a{
+    color: #67b54b;
+}
+.actions > button{
+    color: #fff;
+    background-color: #67b54b;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-right: 14px;
+    padding-left: 14px;
+    border: 0;
+    border-radius: 5px;
+}
+li{
+    display: inline;
+}
+/* todos los hijos de header (>*)*/
+.header >*{
+    font-size: 16px;
+    display: inline-block;
+    line-height: 45px;
+    height: 100%; 
+    vertical-align: middle;
+}
+
 h1{
     color: #025157;
     text-align: center;
@@ -19,3 +83,4 @@ button{
     font-family: verdana;
     font-size: 20px;
 }
+
