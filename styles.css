@@ -2,8 +2,15 @@ body{
     background-color: #fffbf7;
     align-items: center;
 }
+.fixed-header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fffbf7;
+}
 .header{
-    margin:40px 20px 0;
+    margin:40px 20px 20px;
     font-size:0 ;
     font-family: sans-serif;
     height: 45px;
@@ -15,7 +22,7 @@ body{
     width: 20%;
 }
 .main{
-    margin-top: 140px;
+    margin-top: 258px;
     text-align: center;
 }
 .navBar{
@@ -68,9 +75,11 @@ li{
 
 h1{
     color: #025157;
+    font-family: 'PT Sans Caption', sans-serif;
     text-align: center;
+    font-size: 50px;
 }
-#texto{
+.texto{
     color: #46484c;
     font-size: 20px;
 }
@@ -78,9 +87,136 @@ button{
     color: #fff;
     background-color: #025157 ;
 }
+
+.form-entry{
+}
 #promocion{
     color: #8b8b8bcc;
     font-family: verdana;
     font-size: 20px;
 }
 
+.contenedor-flex{
+    display: flex;
+    width: 70%;
+    margin:100px auto;
+    align-items: center;
+}
+.videoContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.videoContainer img{
+  width: 120px;
+  margin-top: 10px;
+}
+.cnotenedor-flex h3{
+    font-family: 'PT Sans Caption', sans-serif;
+    color: #025157;
+    font-size: 40px;
+    line-height: 48px;
+    margin-top: 0;
+}
+.contenedor-flex > p{
+    color: #343434;
+    font-size: 16px;
+    line-height: 1.5;
+}
+.artPubli{
+    display:flex ;
+    flex-direction: column;
+    margin-left: 40px;
+    align-self: stretch;
+}
+.greend-part{
+    display: flex;
+    background-color: #a1d683;
+    align-items: center;
+}
+.containerTestim{
+    display: flex;
+    width: 70%;
+    align-items: center;
+    margin: 100px auto;
+}
+.testimonios{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+.testimonios button{
+    width: 150px;
+}
+.card{
+    background-color:#fff ;
+    border-radius: 10px;
+    position: relative;
+    margin-left: 10%;
+    display: flex;
+    width: 300px;
+    flex-direction: column;
+    align-self: center;
+}
+.card img{
+    display: flex;
+    width: 100%;
+    height: 300px;
+    align-self: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.circle{
+    height: 100px;
+    width: 100px;
+    background-color: #f9da73;
+    border-radius: 50%;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    position: absolute;
+    top: 230px;
+    right: 25px;
+}
+.circle img{
+    width: 95%;
+    height: auto;
+  }
+.descriptionFooter{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-right: 20px;
+}
+.descriptionFooter img{
+    width: 30px;
+    height: auto;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+.descriptionFooter>p{
+    color:gray;
+}
+.testimonios h3{
+    font-family: 'PT Sans Caption', sans-serif;
+    color: #025157;
+    font-size: 40px;
+    line-height: 48px;
+}
+.testimonios>p{
+    color: #343434;
+    font-size: 30px;
+    line-height: 1.5;
+}
+.titleCard{
+    color: #46484c;
+    font-size: 18px;
+    margin-left: 20px;
+}
+.contentCard{
+    color: #46484c;
+    font-size: 20px;
+    margin-left: 20px;
+    font-family: 'Raleway', sans-serif;
+    text-align: left;
+}
