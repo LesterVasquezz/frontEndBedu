@@ -223,7 +223,6 @@ button{
 
 .features {
     display: grid;
-    height:660px;
     align-items: center;
     background-color: #025157;
     padding: 5% 10%;
@@ -285,6 +284,7 @@ button{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-top: 50px;
 }
 .titulo-works >p{
     color: #343434;
@@ -383,8 +383,45 @@ button{
         margin-bottom: 10px;
         margin-top: 30px;
     }
+    .features{
+        grid-template: repeat(4, 1fr) / 1fr;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .features .content-left{
+        width: 100%;
+    }
+    .content-right{
+        display: none;
+    }
+    .containerTestim{
+        margin-top: 0;
+        flex-direction: column;
+        width: 100%;
+    }
+    .testimonios button{
+        width: 150px;
+        margin: auto;
+        margin-bottom: 20px;
+    }.testimonios >img{
+        width: 100%;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
 
-  }
+    .options-Cards{
+        grid-template: repeat(4, 1fr) / 1fr;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .card{
+        margin: auto;
+    }
+    .titulo-works >p{
+        margin-left: 20px;
+    }
+    
+  }/*fin */
 
  
   /** dispositivos pequeños en vista landscape (horizontal) */
