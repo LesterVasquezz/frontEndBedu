@@ -8,6 +8,7 @@ body{
     left: 0;
     right: 0;
     background-color: #fffbf7;
+    z-index: 1030;
 }
 .header{
     margin:40px 20px 20px;
@@ -77,7 +78,7 @@ h1{
     color: #025157;
     font-family: 'PT Sans Caption', sans-serif;
     text-align: center;
-    font-size: 50px;
+    font-size: 60px;
 }
 .texto{
     color: #46484c;
@@ -111,17 +112,16 @@ button{
   width: 120px;
   margin-top: 10px;
 }
-.cnotenedor-flex h3{
+.contenedor-flex h3{
     font-family: 'PT Sans Caption', sans-serif;
     color: #025157;
     font-size: 40px;
-    line-height: 48px;
     margin-top: 0;
 }
-.contenedor-flex > p{
+.contenedor-flex  p{
     color: #343434;
-    font-size: 16px;
-    line-height: 1.5;
+    font-size: 20px;
+    line-height: 1.4;
 }
 .artPubli{
     display:flex ;
@@ -151,7 +151,7 @@ button{
 .card{
     background-color:#fff ;
     border-radius: 10px;
-    position: relative;
+    position:sticky;
     margin-left: 10%;
     display: flex;
     width: 300px;
@@ -220,3 +220,190 @@ button{
     font-family: 'Raleway', sans-serif;
     text-align: left;
 }
+
+.features {
+    display: grid;
+    height:660px;
+    align-items: center;
+    background-color: #025157;
+    padding: 5% 10%;
+    grid-template:repeat(2, 1fr) / repeat(2, 1fr);
+}
+.features .tarjetas{
+    margin-bottom: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
+    background-color: #fff;
+    display: flex;
+    border-radius: 5px;  
+    overflow: hidden;  
+    height: 300px;
+    border: 1px solid #dadada;
+}
+.tarjetas:hover {
+    transform: scale(1.01);
+  }
+.content-left{
+    padding: 30px 20px 40px 40px;
+    width: 70%;
+
+}
+.content-left img{
+    width: 50px;
+        
+}
+.content-right{
+    width: 30%;
+    display: block;
+}
+.content-right img{
+    height:90%;
+    width: 90%;
+    padding: 20px;
+}
+
+.content-left h3{
+    font-size: 24px;
+    color: #343434;
+    font-weight: 400;
+}
+.content-left p{
+    font-size: 16px;
+    color: #7e7e7e;
+    font-weight: 400;
+    
+}
+.content-left a{
+    font-size: 16px;
+    color: #67b54b;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.titulo-works{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.titulo-works >p{
+    color: #343434;
+    font-size: 25px;
+    line-height: 1.5;
+    font-family: 'PT Sans Caption', sans-serif;
+}
+.options-Cards{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: 5% 10%;
+    height: 600px;
+    background-color: #fffbf7;;
+}
+.card-Option{
+    background-color: #fff;
+    margin-left: 15px;
+    margin-right: 15px;
+    border-radius: 5px;
+    border: 1px solid #dadada;
+}
+.card-Option:hover {
+    transform: scale(1.01);
+  }
+.topCard{
+    display: block;
+    height: 60%;
+}
+.topCard >img{
+    position: absolute;
+    width: 30px;
+    margin-top: 25px;
+    margin-left: 30px;
+    filter: opacity(0.5);
+}
+.topCard figure{
+    height: 90%;
+}
+.topCard figure img{
+    width: 100%;
+    height: 100%;
+    padding-left: 15px;
+}
+.buttonCard{
+    display: flex;
+    flex-direction: column;
+    height: 40%;
+}
+.buttonCard h2{
+    color: #025157;
+    font-family: 'PT Sans Caption', sans-serif;
+    text-align: center;
+    font-size: 30px;
+}
+.buttonCard >p{
+    font-size: 16px;
+    color: #7e7e7e;
+    font-weight: 400;
+    margin-left: 30px;
+    margin-right: 20px;
+}
+.buttonCard >a{
+    font-size: 16px;
+    color: #67b54b;
+    font-weight: 600;
+    text-decoration: none;
+    margin-left: 30px;
+}
+/** dispositivos móviles en vista viewport (vertical) */
+@media (max-width: 575px){
+    .navBar,
+    .actions {
+      display: none;
+    }
+    h1{
+        font-size: 30px;
+    }
+    .main{
+        margin-top: 100px;
+    }
+
+    .banner img{
+        width: 100%;
+    }
+    .artPubli>form>input{
+        margin-bottom: 10px;
+    }
+    .contenedor-flex{
+        flex-direction: column;
+        max-width: 90%;
+    }
+    .contenedor-flex h3{
+        font-size: 25px;
+        line-height: 1.2;
+        margin-bottom: 10px;
+        margin-top: 30px;
+    }
+
+  }
+
+ 
+  /** dispositivos pequeños en vista landscape (horizontal) */
+  /**@media (min-width: 576px) and (max-width: 767px) {
+    
+  }**/
+
+  
+/** dispositivos medianos (tablets) */
+@media (min-width: 768px) and (max-width: 991px) {
+    
+  }
+  
+  /** dispositivos grandes (desktops) */
+  @media (min-width: 992px) and (max-width: 1199px) {
+    
+  }
+  
+  /** dispositivos extra grandes (monitores grandes, tvs) */
+  @media (min-width: 1200px) {
+ 
+  }
